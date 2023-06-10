@@ -1,0 +1,12 @@
+.button{
+    border: 1px solid var(--main-color);
+    padding: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button > * {
+    outline: 1px solid red;
+    /* width: max-content; */
+}

@@ -1,0 +1,32 @@
+@import url("/assets/css/elements/arrows.css");
+@import url("/assets/css/elements/glass_card.css");
+@import url("/assets/css/elements/button.css");
+html{
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+:root {
+    --main-color: #CCA33D;
+    --left-right-padding: 2rem;
+    --secondary-color: #CECECE;
+}
+
+*{
+    color:var(--secondary-color);
+}
+
+
+ul{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+li{
+    list-style: none;
+    display: flex;
+}

@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global/global.css">
+    <link rel="stylesheet" href="assets/css/index/index.css">
+    <link rel="stylesheet" href="assets/css/nav/nav.css">
+    <link rel="stylesheet" href="assets/css/typography/typorgraphy.css">
     <title>Velvet Elite</title>
 </head>
 <body>
-    <header>
+  <header>
         <div class="container">
-            <div class="navbar">
+            <div class="site-nav">
                 <img class="logo" src="assets/images/velvetElite.jpg" alt="Velvet Elite Logo">
-                <img class="mobile-menu" id="mobile-menu" class="mobile-menu" src="assets/svg/menu-gold.svg" alt="Menu navigation">
-                <nav class="close">
-                    <img src="assets/svg/close-gold.svg" alt="close navigation bar">
-                    <ul>
-                        <li class="active"><a href="#">Home</a></li>
+                <nav>
+                    <ul class="primary-navigation" data-visible="false">
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">The Agency</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
+
+                <div class="menu-toggle" nav-opened="false">
+                    <div class="hamburger"></div>
+                </div>
             </div>
     
-            <div class="header-details">
-                <img class="arrow-down" src="assets/svg/arrow-down-gold.svg" alt="Arrow Down Navigation">
+            <div class="details">
                 <div class="glass-card">
                     <h1>We want your business to succeed!</h1> 
                     <h3>Profit with us</h3>
@@ -34,14 +39,14 @@
                         <li>Account growth</li>
                         <li>Customer acquisition</li>
                     </ul>
-                    <a class="button">How we work <span> <img class="right-arrow" src="assets/svg/right-arrow-gold.svg" alt="Right Arrow button style"></span></a>
+                    <a class="button">How we work<img class="right-arrow" src="assets/svg/right-arrow-gold.svg" alt="Right Arrow button style"></a>
                 </div>
-    
+                <img class="arrow-down" src="assets/svg/arrow-down-gold.svg" alt="Arrow Down Navigation">
             </div>
         </div>
     </header>
 
-    <section class="section2">
+    <!-- <section class="section2">
         <div class="container">
             <div class="section2-details">
                 <img class="arrow-down" src="assets/svg/arrow-down-gold.svg" alt="Arrow Down Navigation">
@@ -221,6 +226,8 @@
      
         <p class="copyright"><a href="index.html" target="_blank">&copy; Velvelite- 2023</a> | <a href="#">Privacy Policy</a> | <a href="#">All Rights Reserved</a></p>
        
-    </footer>
+    </footer> -->
+    <script src="assets/js/nav.js"></script>
 </body>
+
 </html>
