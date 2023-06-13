@@ -22,7 +22,7 @@ header{
 }
 
 .container{
-    height: 100dvh;
+    /* height: 150dvh; */
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,6 +32,7 @@ header{
 
 
 .details{
+    align-self: end;
     display: flex;
     position: relative;
     bottom: 7%;
@@ -81,7 +82,7 @@ header{
 
 
 .section2{
-    height: 100vh; 
+
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/mobile/section2Mobile.png");
@@ -89,3 +90,7 @@ header{
     background-repeat: no-repeat;
 }
 
+
+.section2 > .container > .details > .glass-card > .button {
+    width: 12rem;
+}
