@@ -1,12 +1,26 @@
 .button{
     border: 1px solid var(--main-color);
-    padding: .8rem;
+    padding: .6rem;
+    width: 8rem;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.4s ease-out;
+    -webkit-transition: color 0.4s ease-out; 
 }
 
-.button > * {
-    outline: 1px solid red;
-    /* width: max-content; */
+.button:hover{
+    background-color: var(--main-color); 
+    color:  black;
 }
+
+.button {
+    color: var(--main-color);
+}
+
+.button{
+    font-size: 1.2rem;
+}
+

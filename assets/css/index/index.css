@@ -1,26 +1,20 @@
 
 
-/* :root {
-    --main-color: #CCA33D;
-    --left-right-padding: 2rem;
-    --secondary-color: #CECECE;
-} */
-
 body{
     margin: 0%;
     padding: 0%;
 }
 
 header{
-    height: 100vh; 
+    height: 100dvh; 
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/heros/mobile/hero1_Mobile.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/mobile/hero1_Mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
- 
+    border-bottom: 1px solid var(--main-color);
+   
 }
-
 
 .logo {
     width: 5rem;
@@ -31,15 +25,67 @@ header{
     height: 100dvh;
     display:flex;
     flex-direction: column;
-    gap: 20rem;
-    padding-right: var(--left-right-padding);
-    padding-left: var(--left-right-padding);
+    justify-content: space-between;
+    padding-right: var(--left-right-padding-mobile);
+    padding-left: var(--left-right-padding-mobile);
 }
 
 
 .details{
-    outline: 2px solid red;
     display: flex;
-    flex-direction: column;
+    position: relative;
+    bottom: 7%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.details > .glass-card{
+    width: min(25rem, 80%);
+}
+.details > .glass-card > ul > li{
     gap: 1rem;
 }
+.details > .glass-card > ul > li::before{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.details > .glass-card > ul > li[item="1"]::before{
+    content: url("/assets/svg/listItems/listItem1.svg");
+}
+
+.details > .glass-card > ul > li[item="2"]::before{
+    content: url("/assets/svg/listItems/listItem2.svg");
+}
+
+.details > .glass-card > ul > li[item="3"]::before{
+    content: url("/assets/svg/listItems/listItem3.svg");
+}
+
+.details > .glass-card > ul > li[item="4"]::before{
+    content: url("/assets/svg/listItems/listItem4.svg");
+}
+
+.details > .glass-card >  .button {
+    padding: .2rem;
+}
+
+.details > .arrow-down{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+
+.section2{
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/mobile/section2Mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

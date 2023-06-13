@@ -1,4 +1,7 @@
 .glass-card{
     background: hsla(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
+    padding: 1.2rem;
+    display: grid;
+    row-gap: 2rem;
 }

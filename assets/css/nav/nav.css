@@ -1,13 +1,16 @@
 .site-nav {
+    position: sticky;
+    z-index: 999;
+    top: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: 2px solid red;
+  
 }
 
-nav {
+/* nav {
     background-color: hsla(0, 3%, 28%, 0.1);
-}
+} */
 
 nav ul {
     position: fixed;
@@ -30,7 +33,6 @@ nav ul {
 }
 
 nav ul li a {
-    caret-color: transparent;
     color: var(--main-color);
 }
 
