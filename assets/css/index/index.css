@@ -47,7 +47,7 @@ header{
 .details > .glass-card > ul > li{
     gap: 1em;
 }
-.details > .glass-card > ul > li::before{
+li::before{
     height: 1.3em;
     width: 1.3em;
 }
@@ -73,7 +73,6 @@ header{
 }
 
 .details > .arrow-down{
-    
     animation: introload-from-left 1s ease-in-out forwards;
     width: 2.3em;
     height: 2.3em;
@@ -82,7 +81,6 @@ header{
 
 
 .section2{
-
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/mobile/section2Mobile.png");
@@ -90,10 +88,18 @@ header{
     background-repeat: no-repeat;
 }
 
-
+.section2 > .container > .details {
+  margin: auto;
+}
 .section2 > .container > .details > .glass-card > .button {
     width: 12rem;
 }
+
+
+.section2 > .container > .details > .glass-card > ul >li[item="fail"]::before{
+    content: url("/assets/svg/listItems/circle-close-svg.svg");
+}
+
 
 
 
@@ -102,6 +108,15 @@ header{
 @media only screen and (min-width: 1000px) {
     header{
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/hero1Image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
+    .section2{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/section2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
