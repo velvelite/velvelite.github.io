@@ -22,7 +22,7 @@ header{
 }
 
 .container{
-    /* height: 150dvh; */
+    height: 100dvh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
