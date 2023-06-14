@@ -1,20 +1,20 @@
 
-
 body{
     margin: 0%;
     padding: 0%;
 }
 
 header{
-    height: 100dvh; 
+    height: 120dvh; 
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/mobile/hero1_Mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 30% 50%;
     border-bottom: 1px solid var(--main-color);
-   
 }
+
 
 .logo {
     width: 5rem;
@@ -22,37 +22,34 @@ header{
 }
 
 .container{
-    height: 100dvh;
+    height: 120dvh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: var(--left-right-padding-mobile);
-    padding-left: var(--left-right-padding-mobile);
+    /* padding-right: var(--left-right-padding-mobile);
+    padding-left: var(--left-right-padding-mobile); */
 }
 
-
 .details{
-    align-self: end;
+    align-self: center;
     display: flex;
-    position: relative;
-    bottom: 7%;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 4rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    align-items: flex-start;
+    gap: 5em;
+    width:90vw;
+    padding-bottom: 4%;
 }
 
 .details > .glass-card{
-    width: min(25rem, 80%);
+    animation: introload-from-right 1s ease-in-out forwards ;
 }
 .details > .glass-card > ul > li{
-    gap: 1rem;
+    gap: 1em;
 }
 .details > .glass-card > ul > li::before{
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.3em;
+    width: 1.3em;
 }
 
 .details > .glass-card > ul > li[item="1"]::before{
@@ -72,12 +69,15 @@ header{
 }
 
 .details > .glass-card >  .button {
-    padding: .2rem;
+    padding: .2em;
 }
 
 .details > .arrow-down{
-    width: 2.3rem;
-    height: 2.3rem;
+    
+    animation: introload-from-left 1s ease-in-out forwards;
+    width: 2.3em;
+    height: 2.3em;
+
 }
 
 
@@ -94,3 +94,46 @@ header{
 .section2 > .container > .details > .glass-card > .button {
     width: 12rem;
 }
+
+
+
+  
+  
+@media only screen and (min-width: 1000px) {
+    header{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/heros/hero1Image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  }
+
+
+  @keyframes introload-from-left {
+
+    from{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+  
+  
+    to{
+     transform: translateX(0px);
+     opacity: 1;
+    }
+    
+  }
+
+  @keyframes introload-from-right {
+
+    from{
+      transform: translateX(100px);
+      opacity: 0;
+    }
+  
+  
+    to{
+     transform: translateX(0px);
+     opacity: 1;
+    }
+    
+  }
